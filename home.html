@@ -1,0 +1,91 @@
+<? top('Добро пожаловать'); ?>
+    <body>
+    <div class="container">
+        <div class="header_logo">
+            <img src="images/LogoPsyTest.png" alt="psytestlogo">
+        </div>
+
+
+
+        <div class="description">
+            <img src="images/description.png" alt="Психология UIB+7 (707) 520-63-02пр. Назарбаева, 8А">
+        </div>
+
+        <div class="waves">
+            <div class="girl">
+                <img src="images/girl.svg" alt="Девочка проходит тест">
+            </div>
+        </div>
+
+        <div class="balls">
+            <img src="images/balls.svg" alt="Розовые шарики">
+        </div>
+
+        <div class="content">
+            <img src="images/content2.svg" alt="Информация о тесте Кеттела">
+            <button type="button" id="btn1">
+                <p class='buttontext'> Начать тест </p>
+            </button>
+        </div>
+
+        <div class="header_logo2">
+            <img src="images/fox1 1.png" alt="psytestlogo">
+            <p class="psytestsLogo"> PsyTests </p>
+
+        </div>
+
+        <div class="content2">
+            <h3>ТЕСТ КЕТТЕЛА </h3>
+            <p>
+                Тест Кеттелла онлайн
+                16PF, форма А (187 вопросов).</p>
+
+            <p> Перед вами вопросы, которые помогут выяснить особенности вашего характера, вашей личности.
+                Не существует «верных» и «неверных» ответов, так как каждый прав по отношению к своим собственным
+                взглядам. </p>
+
+            <p> Старайтесь отвечать искренне и точно.
+            </p>
+            <button type="button" id="btn2">
+                <p class='buttontext2'> Начать тест </p>
+            </button>
+
+
+
+
+        </div>
+
+        <div class="modal">
+            <div class="contentModal">
+
+                <h4 class="ukazanie">
+                    Прежде, чем начать опрос, укажите, пожалуйста ваш пол и возраст (от 16 лет).
+                </h4>
+
+                <span class="maleName"> Пол: </span>
+                <div class='male'>
+                    <div class="a1"><input type="radio" id='c1' name="male"> <img src="images/female.png" alt=""> <label
+                                id="l1" for="c1">
+                            Женский</label> </br></div>
+                    <div class="a2"><input type="radio" id='c2' name="male"> <img src="images/male.png" alt=""><label
+                                id="l1" for="c2">
+                            Мужской</label></div>
+                </div>
+                <span id='ageName'> Возраст: </span>
+                <div class="age">
+
+                    <input id='age' type="text">
+                </div>
+                <button id='btn'>
+                    <p class="btnText" onclick="postQuery()"> Начать тест</p>
+                </button>
+
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+<? bottom() ?>
