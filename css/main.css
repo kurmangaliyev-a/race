@@ -109,3 +109,12 @@ table {
     font-weight: 500;
 
 }
+body{
+    overflow: hidden;
+}
+.game{
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-self:center;
+}
