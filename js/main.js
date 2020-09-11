@@ -37,7 +37,7 @@ function getQuantityElements(heightElement) {
 
 
 function startGame() {
-    SETTING.speed = 0;
+    SETTING.speed = 3;
     gameArea.innerHTML = '';
     SETTING.score = 0;
     audio.play();
@@ -97,7 +97,7 @@ function playGame() {
         car.style.left = SETTING.x + 'px';
         car.style.top = SETTING.y + 'px';
         requestAnimationFrame(playGame);
-        SETTING.speed+=0.05;
+        SETTING.speed+=0.005;
     }
 
 }
