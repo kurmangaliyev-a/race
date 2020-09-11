@@ -58,7 +58,7 @@ function startGame() {
         enemy.y =- 100*SETTING.traffic * (i+1);
         enemy.style.left = Math.floor(Math.random() * (gameArea.offsetWidth - 50 ))+ 'px';
         enemy.style.top = enemy.y +'px';
-        enemy.style.background =`transparent url(../image/enemy${randomEnemy}.png) center / cover`;
+        enemy.style.background =`transparent url(./image/enemy${randomEnemy}.png) center / cover`;
         gameArea.append(enemy);
     }
 
