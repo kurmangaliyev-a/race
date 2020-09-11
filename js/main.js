@@ -7,7 +7,7 @@ car.classList.add('car');
 let SETTING = {
     start: false,
     score: 0,
-    speed: 5,
+    speed: 3,
     traffic: 3
 };
 
@@ -37,7 +37,7 @@ function getQuantityElements(heightElement) {
 
 
 function startGame() {
-    SETTING.speed = 3;
+    SETTING.speed = 0;
     gameArea.innerHTML = '';
     SETTING.score = 0;
     audio.play();
@@ -76,7 +76,7 @@ function startGame() {
 
 
 function playGame() {
-    score.classList.remove('hide');
+
     if (SETTING.start) {
         SETTING.score+=SETTING.speed;
         score.innerHTML = 'SCORE<br> ' + Math.floor(SETTING.score);
@@ -97,8 +97,7 @@ function playGame() {
         car.style.left = SETTING.x + 'px';
         car.style.top = SETTING.y + 'px';
         requestAnimationFrame(playGame);
-        SETTING.speed+=0.005;
-        console.log(SETTING.speed);
+        SETTING.speed+=0.05;
     }
 
 }
@@ -132,6 +131,7 @@ function moveEnemy() {
         if (carRect.top <= enemyRect.bottom && carRect.right >= enemyRect.left && carRect.left <= enemyRect.right && carRect.bottom >= enemyRect.top ){
             SETTING.start=false;
             audio.pause();
+            audio.currentTime = 0;
             start.classList.remove('hide');
             start.style.top = score.offsetHeight;
         }
